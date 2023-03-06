@@ -10,9 +10,6 @@ window = tk.Tk()
 canvas = tk.Canvas(window, width=800, height=600)
 canvas.pack()
 
-# Generate a random list to sort
-# lst = random.sample(range(1, 100), 90)
-
 # Define a function to draw the list on the canvas
 def draw_list(lst, window):
     canvas.delete('all') # clear the canvas
@@ -28,14 +25,6 @@ def draw_list(lst, window):
 sorted_list1 = bubblesort.bubble_sort
 sorted_list2 = insertionSort.insertion_sort
 functionList = [sorted_list1, sorted_list2]
-
-# def animate_sort(lst, window):
-#     bubblesort.bubble_sort(lst, window, draw_list)
-#     # Call the draw_list function after each iteration of the sorting algorithm
-#     window.after(10) # Call the function again after 100 milliseconds
-
-# # Call the animate_sort function to start the animation
-# animate_sort(lst, window)
 
 for func in functionList:
     lst = random.sample(range(1, 100), 75)
