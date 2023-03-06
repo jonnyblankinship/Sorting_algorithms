@@ -32,5 +32,3 @@ for func in functionList:
 
 # Start the main loop
 window.mainloop()
-
-text 
