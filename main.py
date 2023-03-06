@@ -25,7 +25,6 @@ def draw_list(lst, window):
 sorted_list1 = bubblesort.bubble_sort
 sorted_list2 = insertionSort.insertion_sort
 functionList = [sorted_list1, sorted_list2]
-
 for func in functionList:
     lst = random.sample(range(1, 100), 75)
     func(lst,window,draw_list)
@@ -33,3 +32,5 @@ for func in functionList:
 
 # Start the main loop
 window.mainloop()
+
+text 
